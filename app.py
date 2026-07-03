@@ -80,7 +80,7 @@ html, body, [class*="css"] {
 .stButton > button:hover { opacity: 0.9; transform: translateY(-1px); }
 
 /* Sliders */
-[data-testid="stSlider"] > div > div { background: #4ade80 !important; }
+[data-testid="stSlider"] > div > div { background: #ffffff !important; }
 
 /* Inputs */
 [data-testid="stNumberInput"] input, .stTextInput input {
@@ -276,9 +276,8 @@ with tab_map:
         paper_bgcolor="#0a0f1e",
         font_color="#94a3b8",
         coloraxis_colorbar=dict(
-            title="kg/ha",
-            tickfont=dict(color="#94a3b8", family="IBM Plex Mono"),
-            titlefont=dict(color="#4ade80", family="IBM Plex Mono")
+            title=dict(text="kg/ha", font=dict(color="#4ade80", family="IBM Plex Mono")),
+            tickfont=dict(color="#94a3b8", family="IBM Plex Mono")
         ),
         margin=dict(l=0, r=0, t=0, b=0)
     )
